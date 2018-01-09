@@ -72,6 +72,11 @@ input, textarea{
     width: 38px;
     height: 38px;
 }
+#button{
+    display: flex;
+    margin-left: 28%;
+    margin-top: 12%;
+}
 /*footer*/
 .bandeorange{
     background-color: #e97719;
