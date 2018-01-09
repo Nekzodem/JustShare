@@ -7,7 +7,11 @@
             <link rel="stylesheet" type="text/css" href="style.css">
             <link rel="stylesheet" media="screen and (max-width: 640px)" href="resolution.css">
         </head>
-        <body>    
+        <body>
+            <div class="animation">
+                <img src="images/fleche.png" id="fleche" alt="fleche de gauche">
+                <img src="images/flecheb.png" id="flecheb" alt="fleche de droite">
+            </div>      
             <section id="transfer">
                 <div id="imagetexte">
                     <div class="logo">
