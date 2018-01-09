@@ -1,5 +1,6 @@
 *{
     font-family: 'Segoe UI', sans-serif;
+    color: #3e3d3e;
 }
 #transfer{
     display: flex;
@@ -32,17 +33,17 @@
     margin-left: 5%;
     margin-top: 10%;
 }
-#destinataire{
+input, textarea{
+    border: none;
+}
+#destinataire, #mail{
     width: 225px;
     height: 28px;
     background-color: #fabf72;
     font-family: 'Segoe UI', sans-serif;
 }
-#mail{
-    width: 225px;
-    height: 28px;
-    background-color: #fabf72;
-    font-family: 'Segoe UI', sans-serif;
+#fichiers, #destinataire, #mail, #message1{
+    padding-left: 3%;
 }
 #message1{
     width: 225px;
@@ -71,7 +72,6 @@
     width: 38px;
     height: 38px;
 }
-
 /*footer*/
 .bandeorange{
     background-color: #e97719;
@@ -98,12 +98,3 @@
     width: 111px;
     height: 35px;
 }
-
-@media screen and (max-width: 640px) {
-    #transfer {
-      display: none;
-    }
-    #foot{
-        display: none;
-    }
-  }
