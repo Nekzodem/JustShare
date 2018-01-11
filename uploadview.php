@@ -15,7 +15,7 @@
             <section id="transfer">
                 <div id="imagetexte">
                     <div class="logo">
-                        <a href="https://cynthiat.promo-4.codeur.online/JustShare/JustShare/"><img class="just" src="images/logo.png" alt="logo"/></a>                  
+                    <a href="https://cynthiat.promo-4.codeur.online/JustShare/JustShare/"><img class="just" src="images/logo.png" alt="logo"/></a>                  
                     </div>
                     <div class="mode">
                         <p>
@@ -51,9 +51,12 @@
                             <button id="envoyer" type="submit" value="envoyer"><img class="buttonenvoyer" src="images/envoyer.png"></button> 
                         </div>
                     </form>
-                    <?php include ("connexion.php") ?>
+                    <?php 
+                    include ("connexion.php") ;
+                    ?>
                 </div>
             </section>
+            <?php  if ($resultat) echo "<p class='transfert'>Transfert réussi</p>"; ?>
                 <div class="bandeorange"></div>      
             <footer>
                 <div class="foot">
@@ -67,11 +70,3 @@
             </footer>
         </body>
     </html>
-
-
-
-
-
-
-
-
