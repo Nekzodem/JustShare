@@ -4,8 +4,7 @@
             <title>JustShare</title>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-            <link rel="stylesheet" type="text/css" href="style.css">
-            <link rel="stylesheet" media="screen and (max-width: 640px)" href="resolution.css">
+            <link rel="stylesheet" type="text/css" href="style2.css">
         </head>
         <body>
             <div class="animation">
@@ -36,16 +35,19 @@
                 </div>
             </section>
                 <div class="bandeorange"></div>      
-            <footer>
-                <div class="foot">
-                    <div id="copylogo">
-                        <p>© <?php echo date('Y'); ?> </p>
-                        <img class="share" src="images/logof.png" alt="logo">
-                    </div>
-                    <p>Mentions légales</p>
-                    <img class="hieroglyphe" src="images/hieroglyphe.png" alt="hieroglyphe">
-                </div>    
-            </footer>
+                <div class="container">   
+                <footer>
+                    <div class="foot">
+                        <div id="copylogo">
+                            <p>© <?php echo date('Y'); ?> </p>
+                            <img class="share" src="images/logof.png" alt="logo">
+                        </div>
+                        <p>Mentions légales</p>
+                        <img class="hieroglyphe" src="images/hieroglyphe.png" alt="hieroglyphe">
+                    </div>    
+                </footer>
+            </div>  
+           
         </body>
     </html>
 

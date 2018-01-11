@@ -1,0 +1,219 @@
+
+@font-face {
+    font-family:'Agency FB';
+    src: url(agency_fb/agency_fb.ttf);
+}
+*{
+    font-family: 'Segoe UI', sans-serif;
+    color: #3e3d3e;
+    margin: none;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+#transfer {
+    text-align: center;
+}
+#transfer img{
+    text-align: center;
+}
+#imagetexte{
+    text-align: center;
+}
+.mode {
+    display: inline-block;
+}
+.logo{
+    text-align: center;
+}
+.just{
+    width: 283px;
+    height: 137px;
+    display: inline-block;
+}
+.mode{
+    padding-top: 50px;
+    width: 278px;
+    margin: 0 10px;
+}
+
+/*formulaire*/
+
+#formulaire_contain, #formulaire_contain_bis{
+    width: 283px;
+    padding: 40px 5px;
+    max-height: 340px;
+    border: 3px solid #3e3d3e;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+
+}
+#formulaire_contain_bis{
+    background-color: #fabf72;
+
+}
+input, textarea{
+    border: none;
+}
+#destinataire, #mail, #message1{
+    width: 225px;
+    height: 28px;
+    background-color: #fabf72;
+    font-family: 'Segoe UI', sans-serif;
+}
+#fichiers, #destinataire, #mail, #message1{
+    padding-left: 30px;
+}
+#message1{
+    height: 85px;
+}
+.envoi{
+    margin-right: 10px;
+    font-family: 'Agency FB', sans-serif;
+    font-size: 25px;
+}
+#fichiers, #envoyer{
+    border: 0;
+    background: none;
+}
+.buttonenvoyer{
+    width: 38px;
+    height: 38px;
+}
+#envoyer, .envoi {
+    cursor: pointer;   
+}
+#button{
+    display: flex;
+    margin-left: 28%;
+    margin-top: 12%;
+    
+}
+/*footer*/
+.transfert{
+    text-align: center;
+    font-family: 'Agency FB', sans-serif; 
+}
+.bandeorange{
+    background-color: #e97719;
+    width: 100%;
+    height: 7px;
+    margin: 50px auto 20px;
+}
+#copylogo{
+    display: flex;
+    justify-content: center;
+}
+#ajoutez, #adresse, #email, #message, #button{
+    margin-top: 10px;
+}
+.share{
+    width: 70px;
+    height: 30px;
+    margin-left: 2px;
+}
+.hieroglyphe{
+    width: 111px;
+    height: 35px;
+}
+.foot {
+text-align: center;
+}
+#copylogo p{
+    margin: 0;
+}
+/*fleches*/
+#fleche, #flecheb{
+   display: none;
+}
+@media (min-width: 576px) { ... }
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    .container{
+        width: 600px;
+    }
+    #transfer{
+        
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+    }
+    #imagetexte{
+        margin-right: 25px;
+    }
+    #formulaire_contain {
+        margin-left: 25px;
+        align-self: flex-end;
+    }
+        /*footer*/
+    .bandeorange {
+    width: 660px;
+    }
+    .foot{
+        display: flex;
+        justify-content: space-between;
+    }
+ }
+
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+/*animation*/
+#fleche, #flecheb{
+   display: block;
+}
+#fleche{
+    position: absolute;
+    left: 0;
+    margin-top: 10%;
+    width: 150px;
+    height: 150px;
+    opacity:0;
+    animation: flechegauche 2s ease-in-out 2s forwards;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+
+@keyframes flechegauche {
+    0%   { 
+        opacity:0;
+        margin-left: -70%; 
+    }
+    100% { 
+        opacity:1;
+        margin-left: 10%;
+    }
+}
+
+#flecheb{
+    position: absolute;
+    right: 0;
+    margin-top: 10%;
+    width: 150px;
+    height: 150px;
+    opacity:0;
+    animation: flechedroite 2s ease-in-out 2s forwards;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    
+}
+
+@keyframes flechedroite {
+    0%   { 
+        opacity:0;
+        margin-right: -70%; 
+    }
+    100% { 
+        opacity:1;
+        margin-right: 10%;
+    }
+}    
+ }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+
+ }

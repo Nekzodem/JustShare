@@ -22,4 +22,7 @@
     #fleche, #flecheb{
         animation: none;
     }
+    #copylogo{
+        display:inline;
+    }
   }
