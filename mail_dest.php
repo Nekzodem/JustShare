@@ -1,4 +1,5 @@
 <?php
+	$key = $_SESSION['key'];
 	$mail = 'noreply@justshare.com';
 	$object = 'Vous avez reçu un fichier sur JustShare !';
 	$to = $_POST['mail_destinataire'];

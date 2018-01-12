@@ -7,9 +7,9 @@ $requete->execute(array(
 'mail_expediteur' => $_POST['mail_expediteur'],
 'mail_destinataire' => $_POST['mail_destinataire'],
 'message' => $_POST['message'],
-'folderPath' => $folderPath,
-'fileSize' => $fileSize,
-'finalName' => $key));
+'folderPath' => $_SESSION['folderPath'],
+'fileSize' => $_SESSION['fileSize'],
+'finalName' => $_SESSION['key']));
 $requete->closeCursor();
 
 ?>

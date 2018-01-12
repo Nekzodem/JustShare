@@ -1,3 +1,6 @@
+<?php session_start(); 
+
+?>
 <!doctype html>
     <html lang="fr">
         <head>
@@ -7,6 +10,8 @@
             <!-- <link rel="stylesheet" type="text/css" href="style.css">
             <link rel="stylesheet" media="screen and (max-width: 640px)" href="resolution.css"> -->
             <link rel="stylesheet" type="text/css" href="style2.css">
+            <script type="text/javascript" src="loading-bar.js"> </script>
+			<script type="text/javascript" src="jquery.js"></script>
         </head>
         <body>
             <div class="animation">
@@ -17,7 +22,7 @@
                 <section id="transfer">
                     <div id="imagetexte">
                         <div class="logo">
-                            <a href="https://cynthiat.promo-4.codeur.online/JustShare/JustShare/"><img class="just" src="images/logo.png" alt="logo"/></a>                  
+                            <a href="index.php"><img class="just" src="images/logo.png" alt="logo"/></a>                  
                         </div>
                         <div class="mode">
                             <p>
@@ -29,12 +34,16 @@
                         </div>
                     </div>
                     <div id="formulaire_contain">
-                        <form action="upload.php" method="post" name="formulaire" onsubmit="return veriForm(this)" enctype="multipart/form-data">
+                        <form id="form3" action="upload.php" method="post" name="formulaire" onsubmit="return veriForm(this)" enctype="multipart/form-data">
                             <div id="ajoutez">
                                 <!--<button id="fichiers" type="file"><img class="buttonenvoyer" src="images/ajouter.png"></button>
                                 <label class="ajout" for="ajout">Ajoutez vos fichiers</label>-->
                                 <input type="file" name="fileToUpload" id="fichiers">
                                 <input type="hidden" name="MAX_FILE_SIZE" value="3000000000">
+                            </div>
+                            <div class="panel">
+                                <label for="courriel"></label>
+                                <div id="myItem3" data-preset="energy" class="ldBar label-center"></div><br>    
                             </div>
                             <div id="adresse">
                                 <label for="courriel"></label>
@@ -50,10 +59,11 @@
                             </div>
                             <div id="button">
                                 <label class="envoi" for="envoi">Envoyer</label>
-                                <button id="envoyer" type="submit" value="envoyer"><img class="buttonenvoyer" src="images/envoyer.png"></button> 
+                                <button id="envoyer" name="envoi" type="submit" value="envoyer"><img class="buttonenvoyer" src="images/envoyer.png"></button> 
                             </div>
+
                         </form>
-                        <?php include ('connexion.php')?>
+                        <?php include ('connexion.php')?> 
                     </div>
                 </section>
                 <?php include ('footer.php')?>

@@ -1,3 +1,4 @@
+
 <!doctype html>
     <html lang="fr">
         <head>
@@ -26,34 +27,38 @@
                     </div>
                 </div>
                 <div id="formulaire_contain">
-                    <form action="upload.php" method="post" name="formulaire" onsubmit="return veriForm(this)" enctype="multipart/form-data">
-                        <div id="ajoutez">
-                            <!--<button id="fichiers" type="file"><img class="buttonenvoyer" src="images/ajouter.png"></button>
-                            <label class="ajout" for="ajout">Ajoutez vos fichiers</label>-->
-                            <input type="file" name="fileToUpload" id="fichiers">
-                            <input type="hidden" name="MAX_FILE_SIZE" value="3000000000">
-                        </div>
-                        <div id="adresse">
-                            <label for="courriel"></label>
-                            <input id="destinataire" type="email" name="mail_destinataire" onblur="verifDestinataire(this)" placeholder="Adresse du destinataire"/>
-                        </div>              
-                        <div id="email">
-                            <label for="courriel"></label>
-                            <input id="mail" type="email" name="mail_expediteur" onblur="verifMail(this)" placeholder="Adresse de l'expéditeur"/>
-                        </div>
-                        <div id="message">
-                            <label for="message"></label>
-                            <textarea id="message1" name="message" placeholder="Message..."></textarea>                
-                        </div>
-                        <div id="button">
-                            <label class="envoi" for="envoi">Envoyer</label>
-                            <button id="envoyer" type="submit" value="envoyer"><img class="buttonenvoyer" src="images/envoyer.png"></button> 
-                        </div>
-                    </form>
+                    <form id="form3" action="upload.php" method="post" name="formulaire" onsubmit="return veriForm(this)" enctype="multipart/form-data">
+                    <div id="ajoutez">
+                        <!--<button id="fichiers" type="file"><img class="buttonenvoyer" src="images/ajouter.png"></button>
+                        <label class="ajout" for="ajout">Ajoutez vos fichiers</label>-->
+                        <input type="file" name="fileToUpload" id="fichiers">
+                        <input type="hidden" name="MAX_FILE_SIZE" value="3000000000">
+                    </div>
+                    <div class="panel">
+                        <label for="courriel"></label>
+                        <div id="myItem3" data-preset="energy" class="ldBar label-center"></div><br>    
+                    </div>
+                    <div id="adresse">
+                        <label for="courriel"></label>
+                        <input id="destinataire" type="email" name="mail_destinataire" onblur="verifDestinataire(this)" placeholder="Adresse du destinataire"/>
+                    </div>              
+                    <div id="email">
+                        <label for="courriel"></label>
+                        <input id="mail" type="email" name="mail_expediteur" onblur="verifMail(this)" placeholder="Adresse de l'expéditeur"/>
+                    </div>
+                    <div id="message">
+                        <label for="message"></label>
+                        <textarea id="message1" name="message" placeholder="Message..."></textarea>                
+                    </div>
+                    <div id="button">
+                        <label class="envoi" for="envoi">Envoyer</label>
+                        <button id="envoyer" name="envoi" type="submit" value="envoyer"><img class="buttonenvoyer" src="images/envoyer.png"></button> 
+                    </div>
+
+                </form>
                     <?php 
                     include ("connexion.php") ;
                     ?>
                 </div>
             </section>
-            <?php  if ($resultat) echo "<p class='transfert'>Transfert réussi</p>"; ?>
             <?php include ('footer.php')?>
