@@ -17,7 +17,7 @@
                 <section id="transfer">
                     <div id="imagetexte">
                         <div class="logo">
-                            <a href="https://cynthiat.promo-4.codeur.online/JustShare/JustShare/"><img class="just" src="images/logo.png" alt="logo"/></a>                  
+                            <a href="https://remis.promo-4.codeur.online/JustShare/"><img class="just" src="images/logo.png" alt="logo"/></a>                  
                         </div>
                         <div class="mode">
                             <p>
