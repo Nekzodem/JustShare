@@ -8,6 +8,9 @@
     color: #3e3d3e;
     margin: none;
 }
+body {
+    overflow-x: hidden;
+}
 .container {
     width: 80%;
     margin: auto;
@@ -36,6 +39,9 @@
     padding-top: 50px;
     width: 278px;
     margin: 0 10px;
+}
+p {
+    text-align: justify;
 }
 
 /*formulaire*/
@@ -198,11 +204,11 @@ text-align: center;
 
     opacity:0;
 
-    animation: flechegauche 2s ease-in-out 2s forwards;
+    animation: flechegauche 0.5s ease-in-out 0.5s forwards;
 
     animation-iteration-count: 1;
 
-    animation-duration: 3s;
+    animation-duration: 1s;
 
 }
 
@@ -240,11 +246,11 @@ text-align: center;
 
     opacity:0;
 
-    animation: flechedroite 2s ease-in-out 2s forwards;
+    animation: flechedroite 0.5s ease-in-out 0.5s forwards;
 
     animation-iteration-count: 1;
 
-    animation-duration: 3s;
+    animation-duration: 1s;
 
     
 
